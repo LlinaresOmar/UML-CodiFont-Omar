@@ -12,8 +12,18 @@ public class Area {
             this.pa3 = p3;
         }
 
-        public Area(int id, Linea l1, Linea l2){
+        public Area(int id, Linea l1, Punto p1){
+            this.id = id;
+            this.pa1 = l1.getPl1();
+            this.pa2 = l1.getPl2();
+            this.pa3 = pa1;
+        }
 
+        public Area(int id, Linea l1, Linea l2){
+            this.id = id;
+            this.pa1 = l1.getPl1();
+            this.pa2 = l1.getPl2();
+            this.pa3 = l2.getPl1();
         }
 
 }
